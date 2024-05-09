@@ -4,4 +4,12 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     site: 'https://jeissonr115.github.io',
     base: 'galeanoCarBoutique',
+
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["./src/components/*"],
+            "@layouts/*": ["./src/layouts/*"]
+        },
+    }
 });
